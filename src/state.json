@@ -1,0 +1,15 @@
+{
+  "day": 0,
+  "colony_name": "Varenhold",
+  "population": 100,
+  "food": 120,
+  "wood": 60,
+  "morale": 7,
+  "security": 5,
+  "health": 8,
+  "known_threats": [
+    "wolves",
+    "winter"
+  ],
+  "recent_events": []
+}

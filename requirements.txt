@@ -1,0 +1,4 @@
+-e .
+anthropic>=0.40.0
+isort>=5.13.0
+pytest
