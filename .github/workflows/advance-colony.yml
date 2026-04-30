@@ -2,11 +2,7 @@ name: Advance Colony
 
 on:
   schedule:
-    # Three chances per hour. GitHub can delay or skip scheduled runs during
-    # busy periods, so the cadence check below prevents a backup slot from
-    # advancing the colony twice in quick succession.
-    # Switch to "17 12 * * *" for a once-daily run instead.
-    - cron: "7,27,47 * * * *"
+    - cron: "17 12 * * *"
   workflow_dispatch:
 
 permissions:
