@@ -1,15 +1,26 @@
 {
-  "day": 0,
+  "day": 1,
   "colony_name": "Varenhold",
   "population": 100,
   "food": 120,
   "wood": 60,
-  "morale": 7,
-  "security": 5,
-  "health": 8,
+  "morale": 6,
+  "security": 4,
+  "health": 7,
   "known_threats": [
     "wolves",
     "winter"
   ],
-  "recent_events": []
+  "recent_events": [
+    {
+      "day": 0,
+      "event_type": "chaos_gods",
+      "effects": {
+        "health": -1,
+        "security": -1,
+        "morale": -1
+      },
+      "summary": "The chaos gods struck the colony when the oracle went silent."
+    }
+  ]
 }
