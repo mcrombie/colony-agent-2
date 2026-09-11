@@ -3,7 +3,13 @@ from copy import deepcopy
 
 from src.commons import advance_commons, migrate_state, validate_commons
 from src.dashboard import render_dashboard
-from src.run_day import load_state
+
+
+def load_state():
+    # A stable legacy fixture: daily commits must never change test preconditions.
+    return {"day": 1, "colony_name": "Varenhold", "population": 100,
+            "food": 120, "wood": 60, "morale": 7, "security": 5,
+            "health": 8, "known_threats": ["wolves", "winter"], "recent_events": []}
 from src.selector import choose_local_event
 
 
@@ -71,3 +77,11 @@ def test_dashboard_escapes_content_and_does_not_invent_trends():
     assert "charter takes effect on the next daily turn" in html
     assert "https://" not in html
     assert "<svg" in svg and 'id="map-title"' in svg
+
+
+def test_dashboard_season_matches_completed_turn_at_boundary():
+    state = load_state()
+    state["day"] = 12
+    html, _ = render_dashboard(state, [])
+    assert '<span class="pill">Spring thaw</span>' in html
+    assert "Day 011" in html
