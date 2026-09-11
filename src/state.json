@@ -1,9 +1,9 @@
 {
-  "day": 1,
+  "day": 2,
   "colony_name": "Varenhold",
   "population": 100,
-  "food": 120,
-  "wood": 60,
+  "food": 128,
+  "wood": 65,
   "morale": 6,
   "security": 4,
   "health": 7,
@@ -21,6 +21,90 @@
         "morale": -1
       },
       "summary": "The chaos gods struck the colony when the oracle went silent."
+    },
+    {
+      "day": 1,
+      "event_type": "river_market",
+      "effects": {
+        "food": 8,
+        "wood": 5
+      },
+      "summary": "River barges exchanged grain, timber and news at the quay.",
+      "civic_effects": {
+        "treasury": 7,
+        "trust": 1
+      },
+      "season": "Spring thaw",
+      "council": "Keepers",
+      "notes": [
+        "Varenhold ratified its River Commons charter: three guilds share four districts."
+      ],
+      "ledger": {
+        "food_produced": 9,
+        "food_consumed": 9,
+        "timber_gathered": 4,
+        "tax_revenue": 3,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 100,
+        "food": 128,
+        "wood": 65,
+        "morale": 6,
+        "security": 4,
+        "health": 7,
+        "treasury": 31,
+        "trust": 53,
+        "culture": 8
+      },
+      "run_date": "2026-09-11",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
-  ]
+  ],
+  "commons": {
+    "charter_day": 1,
+    "treasury": 31,
+    "trust": 53,
+    "culture": 8,
+    "guilds": {
+      "Keepers": 49,
+      "Makers": 50,
+      "Riverfolk": 53
+    },
+    "council": {
+      "guild": "Keepers",
+      "term_start": 1,
+      "term": 1
+    },
+    "districts": {
+      "grove": {
+        "level": 0,
+        "progress": 1
+      },
+      "lantern": {
+        "level": 0,
+        "progress": 0
+      },
+      "harbor": {
+        "level": 0,
+        "progress": 0
+      },
+      "forum": {
+        "level": 0,
+        "progress": 0
+      }
+    },
+    "active_project": "grove",
+    "completed_projects": [],
+    "api_attempts": 0,
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "schema_version": 2,
+  "last_run_date": "2026-09-11"
 }
