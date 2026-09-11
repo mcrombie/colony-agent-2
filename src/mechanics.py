@@ -23,6 +23,16 @@ def validate_state(state: dict[str, Any]) -> None:
     missing = [k for k in _REQUIRED_STATE_KEYS if k not in state]
     if missing:
         raise ValueError(f"State is missing required fields: {missing}")
+    for stat in ("day",) + _CAPPED_STATS + _FLOOR_STATS:
+        if type(state[stat]) is not int:
+            raise ValueError(f"State field '{stat}' must be an integer")
+    if state["day"] < 0:
+        raise ValueError("State field 'day' must not be negative")
+    if not isinstance(state["colony_name"], str) or not state["colony_name"].strip():
+        raise ValueError("State field 'colony_name' must be a nonempty string")
+    for field in ("known_threats", "recent_events"):
+        if not isinstance(state[field], list):
+            raise ValueError(f"State field '{field}' must be a list")
     for stat in _CAPPED_STATS:
         v = state[stat]
         if not (0 <= v <= 10):
@@ -76,6 +86,14 @@ def summarize_event(state: dict[str, Any], event_type: str) -> str:
         "quiet_day": "The day passed quietly while food stores were used.",
         "chaos_gods": "The chaos gods struck the colony when the oracle went silent.",
         "failed_construction": "Construction failed because the colony lacked enough wood.",
+        "river_market": "River barges exchanged grain, timber and news at the quay.",
+        "lantern_festival": "The Lantern Ward opened its courtyards for a night of music.",
+        "public_clinic": "Grove healers held a free clinic for every district.",
+        "woodland_stewardship": "The Keepers coppiced the woodland and renewed its paths.",
+        "council_forum": "Citizens argued their priorities in an open council forum.",
+        "river_flood": "High water damaged the quay and soaked the communal stores.",
+        "guild_rivalry": "Competing guilds halted work over the allocation of public funds.",
+        "craft_fair": "The Makers displayed river glass, pottery and carved instruments.",
     }
     if event_type == "discovery":
         details = [
@@ -111,6 +129,18 @@ def _effects_for(state: dict[str, Any], event_type: str) -> dict[str, int]:
         return {"food": -5}
     if event_type == "chaos_gods":
         return {"health": -1, "security": -1, "morale": -1}
+    civic_effects = {
+        "river_market": {"food": 8, "wood": 4},
+        "lantern_festival": {"food": -6, "morale": 2},
+        "public_clinic": {"food": -4, "health": 2},
+        "woodland_stewardship": {"wood": 12, "health": 1},
+        "council_forum": {"morale": 1, "security": 1},
+        "river_flood": {"food": -16, "wood": -6, "security": -1},
+        "guild_rivalry": {"morale": -1, "wood": -4},
+        "craft_fair": {"wood": -6, "morale": 1},
+    }
+    if event_type in civic_effects:
+        return civic_effects[event_type]
     raise ValueError(f"Unknown event type: {event_type!r}")
 
 

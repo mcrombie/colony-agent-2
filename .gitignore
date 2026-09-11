@@ -11,3 +11,9 @@ __pycache__/
 dist/
 build/
 .venv/
+src/.run_day.lock
+src/.pending-day.json
+src/.state.json.*
+src/.events.jsonl.*
+src/.history.md.*
+.qa/

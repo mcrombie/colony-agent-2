@@ -1,137 +1,129 @@
-"""Event selection via the Anthropic Claude API."""
+"""A reproducible civic director, with explicitly opted-in, bounded Claude advice."""
 
 from __future__ import annotations
 
 import json
 import os
-import time
+import random
 from typing import Any
 
 from src.config import load_local_env
-from src.constants import CHAOS_GODS_EVENT_TYPE, SELECTABLE_EVENT_TYPES
+from src.constants import SELECTABLE_EVENT_TYPES
 
 DEFAULT_MODEL = "claude-haiku-4-5-20251001"
-MAX_ATTEMPTS = 3
-
-_SELECT_TOOL: dict[str, Any] = {
-    "name": "select_event",
-    "description": "Select exactly one event type for the colony's current day.",
-    "input_schema": {
-        "type": "object",
-        "properties": {
-            "event_type": {
-                "type": "string",
-                "enum": list(SELECTABLE_EVENT_TYPES),
-                "description": "The event type to apply today.",
-            },
-            "reasoning": {
-                "type": "string",
-                "description": "Brief explanation of why this event fits the current state.",
-            },
-        },
-        "required": ["event_type", "reasoning"],
-    },
-}
+MAX_OUTPUT_TOKENS = 160
+API_TIMEOUT_SECONDS = 20
 
 
 class SelectorError(RuntimeError):
-    """Raised when event selection fails unrecoverably."""
+    """Claude advice was unavailable; local simulation can still continue."""
 
 
 class MissingConfigError(SelectorError):
-    """Raised when ANTHROPIC_API_KEY is not set."""
+    """Optional Claude advice has no API key."""
+
+
+def choose_local_event(state: dict[str, Any]) -> str:
+    """Use needs, season and recent history without network or paid dependencies."""
+    weights = {event: 2.0 for event in SELECTABLE_EVENT_TYPES}
+    weights.update(river_market=5, craft_fair=4, council_forum=3,
+                   woodland_stewardship=4, good_harvest=4, discovery=1,
+                   poor_harvest=1, illness=1, dispute=1, quiet_day=1)
+    if state["food"] < 55:
+        weights.update(good_harvest=35, river_market=20, poor_harvest=0.2)
+    if state["wood"] < 20:
+        weights.update(woodland_stewardship=35, construction=0.1)
+    if state["health"] < 6:
+        weights["public_clinic"] = 28
+    if state["morale"] < 5:
+        weights["lantern_festival"] = 24
+    if state["security"] < 4:
+        weights["construction"] = 20 if state["wood"] >= 10 else 0
+        weights["council_forum"] = 12
+    season = (state["day"] // 12) % 4
+    weights["river_flood"] = 4 if season == 0 else 0.5
+    weights["poor_harvest"] *= 3 if season == 3 else 1
+    mandate = state.get("commons", {}).get("council", {}).get("guild", "Keepers")
+    favored = {"Keepers": "woodland_stewardship", "Makers": "craft_fair",
+               "Riverfolk": "river_market"}[mandate]
+    weights[favored] *= 1.7
+    for event in state.get("recent_events", [])[-3:]:
+        key = event.get("event_type")
+        if key in weights:
+            weights[key] *= 0.35
+    rng = random.Random(f"varenhold-commons-v1:{state['colony_name']}:{state['day']}")
+    return rng.choices(list(weights), weights=list(weights.values()), k=1)[0]
+
+
+def select_event(state: dict[str, Any]) -> tuple[str, dict[str, Any]]:
+    load_local_env()
+    mode = os.getenv("COLONY_DIRECTOR", "local").strip().lower()
+    if mode not in {"local", "claude"}:
+        raise ValueError("COLONY_DIRECTOR must be 'local' or 'claude'")
+    if mode == "local":
+        return choose_local_event(state), {"source": "local", "api_attempts": 0}
+    try:
+        interval = int(os.getenv("COLONY_AI_INTERVAL", "7"))
+        if interval < 1:
+            raise ValueError
+    except ValueError as exc:
+        raise ValueError("COLONY_AI_INTERVAL must be a positive integer") from exc
+    if state["day"] % interval:
+        return choose_local_event(state), {"source": "local", "api_attempts": 0}
+    if not os.getenv("ANTHROPIC_API_KEY"):
+        return choose_local_event(state), {
+            "source": "local_fallback", "api_attempts": 0, "reason": "missing_key"}
+    try:
+        event, usage = _choose_with_claude(state)
+        return event, {"source": "claude", "api_attempts": 1, **usage}
+    except SelectorError as exc:
+        # Exception bodies can contain credentials or request content. Log only our category.
+        print(f"::warning title=Claude unavailable::{exc}; using the local civic director.")
+        return choose_local_event(state), {
+            "source": "local_fallback", "api_attempts": 1, "reason": str(exc)}
 
 
 def choose_event(state: dict[str, Any]) -> str:
-    """Select a colony event. Falls back to chaos_gods on API failure; re-raises on missing config."""
-    load_local_env()
+    return select_event(state)[0]
+
+
+def _choose_with_claude(state: dict[str, Any]) -> tuple[str, dict[str, int]]:
+    if not os.getenv("ANTHROPIC_API_KEY"):
+        raise MissingConfigError("missing_key")
     try:
-        return _choose_with_claude(state)
-    except MissingConfigError:
-        raise
-    except SelectorError as exc:
-        _emit_warning(str(exc))
-        return CHAOS_GODS_EVENT_TYPE
+        import anthropic
 
-
-def _choose_with_claude(state: dict[str, Any]) -> str:
-    api_key = os.getenv("ANTHROPIC_API_KEY")
-    if not api_key:
-        raise MissingConfigError("ANTHROPIC_API_KEY is not set.")
-
-    import anthropic
-
-    model = os.getenv("ANTHROPIC_MODEL") or DEFAULT_MODEL
-    client = anthropic.Anthropic(api_key=api_key)
-    prompt = _build_prompt(state)
-
-    last_error: Exception | None = None
-    for attempt in range(1, MAX_ATTEMPTS + 1):
-        try:
+        with anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"],
+                                 max_retries=0, timeout=API_TIMEOUT_SECONDS) as client:
             response = client.messages.create(
-                model=model,
-                max_tokens=256,
-                tools=[_SELECT_TOOL],
-                tool_choice={"type": "any"},
-                messages=[{"role": "user", "content": prompt}],
+                model=os.getenv("ANTHROPIC_MODEL") or DEFAULT_MODEL,
+                max_tokens=MAX_OUTPUT_TOKENS,
+                tools=[{"name": "select_event", "description": "Choose the day's civic event.",
+                        "input_schema": {"type": "object", "properties": {
+                            "event_type": {"type": "string", "enum": list(SELECTABLE_EVENT_TYPES)}},
+                            "required": ["event_type"], "additionalProperties": False}}],
+                tool_choice={"type": "tool", "name": "select_event"},
+                messages=[{"role": "user", "content": _build_prompt(state)}],
             )
-            for block in response.content:
-                if block.type == "tool_use":
-                    event_type = block.input["event_type"]
-                    if event_type not in SELECTABLE_EVENT_TYPES:
-                        raise SelectorError(f"Claude returned invalid event type: {event_type!r}")
-                    return event_type
-            raise SelectorError("Claude response contained no tool call.")
-        except (MissingConfigError, SelectorError):
-            raise
-        except Exception as exc:
-            last_error = exc
-            if attempt < MAX_ATTEMPTS:
-                time.sleep(attempt * 2)
-
-    raise SelectorError(
-        f"Claude API call failed after {MAX_ATTEMPTS} attempts: {_safe_error(last_error)}"
-    )
+        for block in response.content:
+            if block.type == "tool_use" and block.name == "select_event":
+                event = block.input.get("event_type")
+                if event in SELECTABLE_EVENT_TYPES:
+                    return event, {"input_tokens": int(response.usage.input_tokens),
+                                   "output_tokens": int(response.usage.output_tokens)}
+        raise SelectorError("invalid_response")
+    except SelectorError:
+        raise
+    except Exception as exc:
+        raise SelectorError(type(exc).__name__) from None
 
 
 def _build_prompt(state: dict[str, Any]) -> str:
-    payload = {
-        "allowed_event_types": list(SELECTABLE_EVENT_TYPES),
-        "current_state": {
-            k: state[k]
-            for k in ("day", "colony_name", "population", "food", "wood",
-                      "morale", "security", "health", "known_threats")
-        },
-        "recent_events": state.get("recent_events", []),
-    }
-    return (
-        "You are an event selector for a small fictional colony simulation. "
-        "Choose exactly one event type that fits the colony's current state. "
-        "Consider resource levels, known threats, and recent history — "
-        "but do not apply mechanics yourself, only select the event type.\n\n"
-        + json.dumps(payload, indent=2)
-    )
-
-
-def _safe_error(error: Exception | None) -> str:
-    if error is None:
-        return "unknown error"
-    api_key = os.getenv("ANTHROPIC_API_KEY") or ""
-    message = str(error)
-    if api_key:
-        message = message.replace(api_key, "[redacted]")
-    message = " ".join(message.split())
-    if len(message) > 400:
-        message = message[:397] + "..."
-    return f"{type(error).__name__}: {message}"
-
-
-def _emit_warning(message: str) -> None:
-    escaped = (
-        message.replace("%", "%25")
-        .replace("\r", "%0D")
-        .replace("\n", "%0A")
-        .replace(":", "%3A")
-        .replace(",", "%2C")
-    )
-    print(f"::warning title=Selector failed::{escaped}")
+    payload = {key: state[key] for key in (
+        "day", "colony_name", "population", "food", "wood", "morale", "security", "health")}
+    payload["colony_name"] = payload["colony_name"][:80]
+    payload["recent_events"] = [event.get("event_type", "")[:40]
+                                for event in state.get("recent_events", [])[-3:]]
+    return ("Direct a river city of guild politics, public works, culture and seasonal trade. "
+            "Choose one plausible varied event, balancing hardship with recovery. "
+            "The engine applies all effects.\n" + json.dumps(payload, separators=(",", ":")))

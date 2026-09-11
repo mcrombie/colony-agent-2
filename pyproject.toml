@@ -4,10 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "colony-agent-2"
-version = "0.1.0"
-description = "Stateful colony simulation driven by Claude."
+version = "0.2.0"
+description = "Varenhold River Commons: a daily civic colony with optional Claude advice."
 requires-python = ">=3.11"
-dependencies = ["anthropic>=0.40.0"]
+dependencies = []
+
+[project.optional-dependencies]
+claude = ["anthropic>=0.40.0,<1"]
+dev = ["pytest>=8,<10"]
 
 [tool.setuptools.packages.find]
 where = ["."]

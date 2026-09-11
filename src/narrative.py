@@ -27,11 +27,19 @@ def write_daily_entry(
     day = event_record["day"]
     event_type = event_record["event_type"]
     effects_text = _describe_effects(event_record["effects"])
-    opening = _EVENT_OPENINGS[event_type]
+    opening = _EVENT_OPENINGS.get(event_type, event_record["summary"].rstrip("."))
 
     body = f"{opening}, {effects_text}." if effects_text else f"{opening}."
     closing = _closing_sentence(state_after)
-    return f"Day {day} — {colony_name}:\n{body} {closing}\n"
+    notes = " ".join(event_record.get("notes", []))
+    civic = _describe_effects(event_record.get("civic_effects", {}))
+    if civic:
+        notes += f" Civic balance: {civic}."
+    season = event_record.get("season", "")
+    heading = f"Day {day} — {colony_name}"
+    if season:
+        heading += f" · {season} · {event_record['council']} council"
+    return f"{heading}:\n{body} {notes.strip()} {closing}\n"
 
 
 def _describe_effects(effects: dict[str, int]) -> str:
