@@ -1,10 +1,10 @@
 {
-  "day": 2,
+  "day": 3,
   "colony_name": "Varenhold",
   "population": 100,
-  "food": 128,
-  "wood": 65,
-  "morale": 6,
+  "food": 122,
+  "wood": 66,
+  "morale": 8,
   "security": 4,
   "health": 7,
   "known_threats": [
@@ -64,16 +64,59 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 2,
+      "event_type": "lantern_festival",
+      "effects": {
+        "food": -6,
+        "wood": 1,
+        "morale": 2
+      },
+      "summary": "The Lantern Ward opened its courtyards for a night of music.",
+      "civic_effects": {
+        "treasury": -6,
+        "trust": 3,
+        "culture": 7
+      },
+      "season": "Spring thaw",
+      "council": "Keepers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 9,
+        "food_consumed": 9,
+        "timber_gathered": 4,
+        "tax_revenue": 3,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 100,
+        "food": 122,
+        "wood": 66,
+        "morale": 8,
+        "security": 4,
+        "health": 7,
+        "treasury": 25,
+        "trust": 56,
+        "culture": 15
+      },
+      "run_date": "2026-09-12",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 31,
-    "trust": 53,
-    "culture": 8,
+    "treasury": 25,
+    "trust": 56,
+    "culture": 15,
     "guilds": {
-      "Keepers": 49,
-      "Makers": 50,
+      "Keepers": 48,
+      "Makers": 53,
       "Riverfolk": 53
     },
     "council": {
@@ -84,7 +127,7 @@
     "districts": {
       "grove": {
         "level": 0,
-        "progress": 1
+        "progress": 2
       },
       "lantern": {
         "level": 0,
@@ -106,5 +149,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-09-11"
+  "last_run_date": "2026-09-12"
 }
