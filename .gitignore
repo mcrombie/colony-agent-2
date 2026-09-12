@@ -17,3 +17,7 @@ src/.state.json.*
 src/.events.jsonl.*
 src/.history.md.*
 .qa/
+
+# Local email previews contain message headers; never publish them.
+*.eml
+.email-previews/
