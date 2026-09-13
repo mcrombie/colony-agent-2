@@ -1,10 +1,10 @@
 {
-  "day": 3,
+  "day": 4,
   "colony_name": "Varenhold",
   "population": 100,
-  "food": 122,
-  "wood": 66,
-  "morale": 8,
+  "food": 137,
+  "wood": 67,
+  "morale": 9,
   "security": 4,
   "health": 7,
   "known_threats": [
@@ -107,15 +107,56 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 3,
+      "event_type": "good_harvest",
+      "effects": {
+        "food": 15,
+        "wood": 1,
+        "morale": 1
+      },
+      "summary": "A strong harvest added food to the stores.",
+      "civic_effects": {
+        "treasury": -1
+      },
+      "season": "Spring thaw",
+      "council": "Keepers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 9,
+        "food_consumed": 9,
+        "timber_gathered": 4,
+        "tax_revenue": 3,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 100,
+        "food": 137,
+        "wood": 67,
+        "morale": 9,
+        "security": 4,
+        "health": 7,
+        "treasury": 24,
+        "trust": 56,
+        "culture": 15
+      },
+      "run_date": "2026-09-13",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 25,
+    "treasury": 24,
     "trust": 56,
     "culture": 15,
     "guilds": {
-      "Keepers": 48,
+      "Keepers": 50,
       "Makers": 53,
       "Riverfolk": 53
     },
@@ -127,7 +168,7 @@
     "districts": {
       "grove": {
         "level": 0,
-        "progress": 2
+        "progress": 3
       },
       "lantern": {
         "level": 0,
@@ -149,5 +190,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-09-12"
+  "last_run_date": "2026-09-13"
 }
