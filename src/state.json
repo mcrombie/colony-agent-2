@@ -1,12 +1,12 @@
 {
-  "day": 4,
+  "day": 5,
   "colony_name": "Varenhold",
   "population": 100,
   "food": 137,
-  "wood": 67,
+  "wood": 80,
   "morale": 9,
   "security": 4,
-  "health": 7,
+  "health": 8,
   "known_threats": [
     "wolves",
     "winter"
@@ -148,15 +148,56 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 4,
+      "event_type": "woodland_stewardship",
+      "effects": {
+        "wood": 13,
+        "health": 1
+      },
+      "summary": "The Keepers coppiced the woodland and renewed its paths.",
+      "civic_effects": {
+        "treasury": -1,
+        "trust": 2
+      },
+      "season": "Spring thaw",
+      "council": "Keepers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 9,
+        "food_consumed": 9,
+        "timber_gathered": 4,
+        "tax_revenue": 3,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 100,
+        "food": 137,
+        "wood": 80,
+        "morale": 9,
+        "security": 4,
+        "health": 8,
+        "treasury": 23,
+        "trust": 58,
+        "culture": 15
+      },
+      "run_date": "2026-09-14",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 24,
-    "trust": 56,
+    "treasury": 23,
+    "trust": 58,
     "culture": 15,
     "guilds": {
-      "Keepers": 50,
+      "Keepers": 52,
       "Makers": 53,
       "Riverfolk": 53
     },
@@ -168,7 +209,7 @@
     "districts": {
       "grove": {
         "level": 0,
-        "progress": 3
+        "progress": 4
       },
       "lantern": {
         "level": 0,
@@ -190,5 +231,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-09-13"
+  "last_run_date": "2026-09-14"
 }

@@ -11,3 +11,6 @@ The Lantern Ward opened its courtyards for a night of music, reduced food by 6, 
 
 Day 3 — Varenhold · Spring thaw · Keepers council:
 A good harvest lifted the colony's spirits, increased food by 15, increased wood by 1, and increased morale by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
+
+Day 4 — Varenhold · Spring thaw · Keepers council:
+The Keepers coppiced the woodland and renewed its paths, increased wood by 13, and increased health by 1. Civic balance: reduced treasury by 1, and increased trust by 2. The settlement endures into another morning.
