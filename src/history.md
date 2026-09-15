@@ -14,3 +14,6 @@ A good harvest lifted the colony's spirits, increased food by 15, increased wood
 
 Day 4 — Varenhold · Spring thaw · Keepers council:
 The Keepers coppiced the woodland and renewed its paths, increased wood by 13, and increased health by 1. Civic balance: reduced treasury by 1, and increased trust by 2. The settlement endures into another morning.
+
+Day 5 — Varenhold · Spring thaw · Keepers council:
+Competing guilds halted work over the allocation of public funds, reduced wood by 3, and reduced morale by 1. Civic balance: reduced treasury by 1, reduced trust by 9, and reduced culture by 3. The settlement endures into another morning.

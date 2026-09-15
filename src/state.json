@@ -1,10 +1,10 @@
 {
-  "day": 5,
+  "day": 6,
   "colony_name": "Varenhold",
   "population": 100,
   "food": 137,
-  "wood": 80,
-  "morale": 9,
+  "wood": 77,
+  "morale": 8,
   "security": 4,
   "health": 8,
   "known_threats": [
@@ -12,16 +12,6 @@
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 0,
-      "event_type": "chaos_gods",
-      "effects": {
-        "health": -1,
-        "security": -1,
-        "morale": -1
-      },
-      "summary": "The chaos gods struck the colony when the oracle went silent."
-    },
     {
       "day": 1,
       "event_type": "river_market",
@@ -189,17 +179,59 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 5,
+      "event_type": "guild_rivalry",
+      "effects": {
+        "wood": -3,
+        "morale": -1
+      },
+      "summary": "Competing guilds halted work over the allocation of public funds.",
+      "civic_effects": {
+        "treasury": -1,
+        "trust": -9,
+        "culture": -3
+      },
+      "season": "Spring thaw",
+      "council": "Keepers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 9,
+        "food_consumed": 9,
+        "timber_gathered": 4,
+        "tax_revenue": 3,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 100,
+        "food": 137,
+        "wood": 77,
+        "morale": 8,
+        "security": 4,
+        "health": 8,
+        "treasury": 22,
+        "trust": 49,
+        "culture": 12
+      },
+      "run_date": "2026-09-15",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 23,
-    "trust": 58,
-    "culture": 15,
+    "treasury": 22,
+    "trust": 49,
+    "culture": 12,
     "guilds": {
-      "Keepers": 52,
-      "Makers": 53,
-      "Riverfolk": 53
+      "Keepers": 48,
+      "Makers": 50,
+      "Riverfolk": 50
     },
     "council": {
       "guild": "Keepers",
@@ -209,7 +241,7 @@
     "districts": {
       "grove": {
         "level": 0,
-        "progress": 4
+        "progress": 5
       },
       "lantern": {
         "level": 0,
@@ -231,5 +263,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-09-14"
+  "last_run_date": "2026-09-15"
 }
