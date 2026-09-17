@@ -20,3 +20,6 @@ Competing guilds halted work over the allocation of public funds, reduced wood b
 
 Day 6 — Varenhold · Spring thaw · Keepers council:
 Citizens argued their priorities in an open council forum, increased wood by 1, increased morale by 1, and increased security by 1. Orchard terraces completed in Grove Ward. Civic balance: reduced treasury by 1, increased trust by 8, and increased culture by 1. The settlement endures into another morning.
+
+Day 7 — Varenhold · Spring thaw · Keepers council:
+River barges exchanged grain, timber and news at the quay, increased food by 9, increased wood by 5, and reduced security by 1. Civic balance: increased treasury by 7, and increased trust by 1. The settlement endures into another morning.
