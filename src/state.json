@@ -1,10 +1,10 @@
 {
-  "day": 8,
+  "day": 9,
   "colony_name": "Varenhold",
   "population": 100,
-  "food": 146,
-  "wood": 83,
-  "morale": 9,
+  "food": 147,
+  "wood": 77,
+  "morale": 10,
   "security": 4,
   "health": 8,
   "known_threats": [
@@ -12,47 +12,6 @@
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 3,
-      "event_type": "good_harvest",
-      "effects": {
-        "food": 15,
-        "wood": 1,
-        "morale": 1
-      },
-      "summary": "A strong harvest added food to the stores.",
-      "civic_effects": {
-        "treasury": -1
-      },
-      "season": "Spring thaw",
-      "council": "Keepers",
-      "notes": [],
-      "ledger": {
-        "food_produced": 9,
-        "food_consumed": 9,
-        "timber_gathered": 4,
-        "tax_revenue": 3,
-        "maintenance": 2,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 100,
-        "food": 137,
-        "wood": 67,
-        "morale": 9,
-        "security": 4,
-        "health": 7,
-        "treasury": 24,
-        "trust": 56,
-        "culture": 15
-      },
-      "run_date": "2026-09-13",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 4,
       "event_type": "woodland_stewardship",
@@ -222,22 +181,67 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 8,
+      "event_type": "craft_fair",
+      "effects": {
+        "food": 1,
+        "wood": -6,
+        "morale": 1
+      },
+      "summary": "The Makers displayed river glass, pottery and carved instruments.",
+      "civic_effects": {
+        "treasury": 5,
+        "trust": 4,
+        "culture": 5
+      },
+      "season": "Spring thaw",
+      "council": "Makers",
+      "notes": [
+        "The council passed to the Makers for a seven-day term."
+      ],
+      "ledger": {
+        "food_produced": 10,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 3,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 100,
+        "food": 147,
+        "wood": 77,
+        "morale": 10,
+        "security": 4,
+        "health": 8,
+        "treasury": 33,
+        "trust": 62,
+        "culture": 18
+      },
+      "run_date": "2026-09-18",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 28,
-    "trust": 58,
-    "culture": 13,
+    "treasury": 33,
+    "trust": 62,
+    "culture": 18,
     "guilds": {
       "Keepers": 53,
-      "Makers": 52,
+      "Makers": 54,
       "Riverfolk": 55
     },
     "council": {
-      "guild": "Keepers",
-      "term_start": 1,
-      "term": 1
+      "guild": "Makers",
+      "term_start": 8,
+      "term": 2
     },
     "districts": {
       "grove": {
@@ -246,7 +250,7 @@
       },
       "lantern": {
         "level": 0,
-        "progress": 1
+        "progress": 2
       },
       "harbor": {
         "level": 0,
@@ -271,5 +275,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-09-17"
+  "last_run_date": "2026-09-18"
 }

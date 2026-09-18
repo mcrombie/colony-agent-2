@@ -23,3 +23,6 @@ Citizens argued their priorities in an open council forum, increased wood by 1, 
 
 Day 7 — Varenhold · Spring thaw · Keepers council:
 River barges exchanged grain, timber and news at the quay, increased food by 9, increased wood by 5, and reduced security by 1. Civic balance: increased treasury by 7, and increased trust by 1. The settlement endures into another morning.
+
+Day 8 — Varenhold · Spring thaw · Makers council:
+The Makers displayed river glass, pottery and carved instruments, increased food by 1, reduced wood by 6, and increased morale by 1. The council passed to the Makers for a seven-day term. Civic balance: increased treasury by 5, increased trust by 4, and increased culture by 5. The settlement endures into another morning.
