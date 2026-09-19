@@ -26,3 +26,6 @@ River barges exchanged grain, timber and news at the quay, increased food by 9, 
 
 Day 8 — Varenhold · Spring thaw · Makers council:
 The Makers displayed river glass, pottery and carved instruments, increased food by 1, reduced wood by 6, and increased morale by 1. The council passed to the Makers for a seven-day term. Civic balance: increased treasury by 5, increased trust by 4, and increased culture by 5. The settlement endures into another morning.
+
+Day 9 — Varenhold · Spring thaw · Makers council:
+A poor harvest strained the colony's stores, reduced food by 9, reduced morale by 1, and reduced health by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
