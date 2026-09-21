@@ -32,3 +32,6 @@ A poor harvest strained the colony's stores, reduced food by 9, reduced morale b
 
 Day 10 — Varenhold · Spring thaw · Makers council:
 The Makers displayed river glass, pottery and carved instruments, increased food by 1, reduced wood by 6, and increased morale by 1. Civic balance: increased treasury by 5, reduced trust by 2, and increased culture by 3. The settlement endures into another morning.
+
+Day 11 — Varenhold · Spring thaw · Makers council:
+A construction effort reinforced the settlement, increased food by 1, reduced wood by 10, reduced morale by 1, and increased security by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.

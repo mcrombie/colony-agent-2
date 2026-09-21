@@ -1,62 +1,17 @@
 {
-  "day": 11,
+  "day": 12,
   "colony_name": "Varenhold",
   "population": 100,
-  "food": 139,
-  "wood": 71,
-  "morale": 10,
-  "security": 4,
+  "food": 140,
+  "wood": 61,
+  "morale": 9,
+  "security": 5,
   "health": 7,
   "known_threats": [
     "wolves",
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 6,
-      "event_type": "council_forum",
-      "effects": {
-        "wood": 1,
-        "morale": 1,
-        "security": 1
-      },
-      "summary": "Citizens argued their priorities in an open council forum.",
-      "civic_effects": {
-        "treasury": -1,
-        "trust": 8,
-        "culture": 1
-      },
-      "season": "Spring thaw",
-      "council": "Keepers",
-      "notes": [
-        "Orchard terraces completed in Grove Ward."
-      ],
-      "ledger": {
-        "food_produced": 9,
-        "food_consumed": 9,
-        "timber_gathered": 4,
-        "tax_revenue": 3,
-        "maintenance": 2,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 100,
-        "food": 137,
-        "wood": 78,
-        "morale": 9,
-        "security": 5,
-        "health": 8,
-        "treasury": 21,
-        "trust": 57,
-        "culture": 13
-      },
-      "run_date": "2026-09-16",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 7,
       "event_type": "river_market",
@@ -227,16 +182,58 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 11,
+      "event_type": "construction",
+      "effects": {
+        "food": 1,
+        "wood": -10,
+        "morale": -1,
+        "security": 1
+      },
+      "summary": "Colonists spent wood to strengthen the settlement.",
+      "civic_effects": {
+        "treasury": -1
+      },
+      "season": "Spring thaw",
+      "council": "Makers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 10,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 3,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 100,
+        "food": 140,
+        "wood": 61,
+        "morale": 9,
+        "security": 5,
+        "health": 7,
+        "treasury": 36,
+        "trust": 60,
+        "culture": 21
+      },
+      "run_date": "2026-09-21",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 37,
+    "treasury": 36,
     "trust": 60,
     "culture": 21,
     "guilds": {
       "Keepers": 53,
-      "Makers": 55,
+      "Makers": 57,
       "Riverfolk": 55
     },
     "council": {
@@ -251,7 +248,7 @@
       },
       "lantern": {
         "level": 0,
-        "progress": 4
+        "progress": 5
       },
       "harbor": {
         "level": 0,
@@ -276,5 +273,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-09-20"
+  "last_run_date": "2026-09-21"
 }
