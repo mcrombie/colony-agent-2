@@ -35,3 +35,6 @@ The Makers displayed river glass, pottery and carved instruments, increased food
 
 Day 11 — Varenhold · Spring thaw · Makers council:
 A construction effort reinforced the settlement, increased food by 1, reduced wood by 10, reduced morale by 1, and increased security by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
+
+Day 12 — Varenhold · High summer · Makers council:
+A good harvest lifted the colony's spirits, increased population by 1, increased food by 19, and increased morale by 1. Public atelier completed in Lantern Ward. A new household joined the river commons. Civic balance: reduced treasury by 1, increased trust by 3, and increased culture by 3. The settlement endures into another morning.

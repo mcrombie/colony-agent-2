@@ -1,10 +1,10 @@
 {
-  "day": 12,
+  "day": 13,
   "colony_name": "Varenhold",
-  "population": 100,
-  "food": 140,
+  "population": 101,
+  "food": 159,
   "wood": 61,
-  "morale": 9,
+  "morale": 10,
   "security": 5,
   "health": 7,
   "known_threats": [
@@ -12,48 +12,6 @@
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 7,
-      "event_type": "river_market",
-      "effects": {
-        "food": 9,
-        "wood": 5,
-        "security": -1
-      },
-      "summary": "River barges exchanged grain, timber and news at the quay.",
-      "civic_effects": {
-        "treasury": 7,
-        "trust": 1
-      },
-      "season": "Spring thaw",
-      "council": "Keepers",
-      "notes": [],
-      "ledger": {
-        "food_produced": 10,
-        "food_consumed": 9,
-        "timber_gathered": 4,
-        "tax_revenue": 3,
-        "maintenance": 2,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 100,
-        "food": 146,
-        "wood": 83,
-        "morale": 9,
-        "security": 4,
-        "health": 8,
-        "treasury": 28,
-        "trust": 58,
-        "culture": 13
-      },
-      "run_date": "2026-09-17",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 8,
       "event_type": "craft_fair",
@@ -224,16 +182,62 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 12,
+      "event_type": "good_harvest",
+      "effects": {
+        "population": 1,
+        "food": 19,
+        "morale": 1
+      },
+      "summary": "A strong harvest added food to the stores.",
+      "civic_effects": {
+        "treasury": -1,
+        "trust": 3,
+        "culture": 3
+      },
+      "season": "High summer",
+      "council": "Makers",
+      "notes": [
+        "Public atelier completed in Lantern Ward.",
+        "A new household joined the river commons."
+      ],
+      "ledger": {
+        "food_produced": 13,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 3,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 101,
+        "food": 159,
+        "wood": 61,
+        "morale": 10,
+        "security": 5,
+        "health": 7,
+        "treasury": 35,
+        "trust": 63,
+        "culture": 24
+      },
+      "run_date": "2026-09-22",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 36,
-    "trust": 60,
-    "culture": 21,
+    "treasury": 35,
+    "trust": 63,
+    "culture": 24,
     "guilds": {
-      "Keepers": 53,
-      "Makers": 57,
+      "Keepers": 56,
+      "Makers": 61,
       "Riverfolk": 55
     },
     "council": {
@@ -247,8 +251,8 @@
         "progress": 0
       },
       "lantern": {
-        "level": 0,
-        "progress": 5
+        "level": 1,
+        "progress": 0
       },
       "harbor": {
         "level": 0,
@@ -259,12 +263,18 @@
         "progress": 0
       }
     },
-    "active_project": "lantern",
+    "active_project": "harbor",
     "completed_projects": [
       {
         "day": 6,
         "district": "grove",
         "title": "Orchard terraces completed in Grove Ward",
+        "level": 1
+      },
+      {
+        "day": 12,
+        "district": "lantern",
+        "title": "Public atelier completed in Lantern Ward",
         "level": 1
       }
     ],
@@ -273,5 +283,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-09-21"
+  "last_run_date": "2026-09-22"
 }
