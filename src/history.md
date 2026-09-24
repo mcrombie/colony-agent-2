@@ -41,3 +41,6 @@ A good harvest lifted the colony's spirits, increased population by 1, increased
 
 Day 13 — Varenhold · High summer · Makers council:
 Competing guilds halted work over the allocation of public funds, increased food by 4, reduced wood by 4, and reduced morale by 1. Civic balance: reduced treasury by 1, reduced trust by 7, and reduced culture by 1. The settlement endures into another morning.
+
+Day 14 — Varenhold · High summer · Makers council:
+Grove healers held a free clinic for every district, reduced security by 1, and increased health by 2. Civic balance: reduced treasury by 5, and increased trust by 4. The settlement endures into another morning.
