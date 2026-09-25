@@ -44,3 +44,6 @@ Competing guilds halted work over the allocation of public funds, increased food
 
 Day 14 — Varenhold · High summer · Makers council:
 Grove healers held a free clinic for every district, reduced security by 1, and increased health by 2. Civic balance: reduced treasury by 5, and increased trust by 4. The settlement endures into another morning.
+
+Day 15 — Varenhold · High summer · Riverfolk council:
+River barges exchanged grain, timber and news at the quay, increased food by 12, and increased wood by 4. The council passed to the Riverfolk for a seven-day term. Civic balance: increased treasury by 8, increased trust by 3, and reduced culture by 2. The settlement endures into another morning.
