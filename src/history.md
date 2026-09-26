@@ -47,3 +47,6 @@ Grove healers held a free clinic for every district, reduced security by 1, and 
 
 Day 15 — Varenhold · High summer · Riverfolk council:
 River barges exchanged grain, timber and news at the quay, increased food by 12, and increased wood by 4. The council passed to the Riverfolk for a seven-day term. Civic balance: increased treasury by 8, increased trust by 3, and reduced culture by 2. The settlement endures into another morning.
+
+Day 16 — Varenhold · High summer · Riverfolk council:
+A discovery gave the colony something new to discuss, increased food by 4, and increased morale by 1. Civic balance: increased culture by 2. The settlement endures into another morning.
