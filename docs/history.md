@@ -50,3 +50,6 @@ River barges exchanged grain, timber and news at the quay, increased food by 12,
 
 Day 16 — Varenhold · High summer · Riverfolk council:
 A discovery gave the colony something new to discuss, increased food by 4, and increased morale by 1. Civic balance: increased culture by 2. The settlement endures into another morning.
+
+Day 17 — Varenhold · High summer · Riverfolk council:
+The Makers displayed river glass, pottery and carved instruments, increased food by 1, and reduced wood by 6. Civic balance: increased treasury by 7, and increased culture by 5. The settlement endures into another morning.
