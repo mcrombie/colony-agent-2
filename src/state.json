@@ -1,9 +1,9 @@
 {
-  "day": 18,
+  "day": 19,
   "colony_name": "Varenhold",
   "population": 101,
-  "food": 180,
-  "wood": 55,
+  "food": 184,
+  "wood": 67,
   "morale": 10,
   "security": 4,
   "health": 9,
@@ -12,49 +12,6 @@
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 13,
-      "event_type": "guild_rivalry",
-      "effects": {
-        "food": 4,
-        "wood": -4,
-        "morale": -1
-      },
-      "summary": "Competing guilds halted work over the allocation of public funds.",
-      "civic_effects": {
-        "treasury": -1,
-        "trust": -7,
-        "culture": -1
-      },
-      "season": "High summer",
-      "council": "Makers",
-      "notes": [],
-      "ledger": {
-        "food_produced": 13,
-        "food_consumed": 9,
-        "timber_gathered": 3,
-        "tax_revenue": 3,
-        "maintenance": 2,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 101,
-        "food": 163,
-        "wood": 57,
-        "morale": 9,
-        "security": 5,
-        "health": 7,
-        "treasury": 34,
-        "trust": 56,
-        "culture": 23
-      },
-      "run_date": "2026-09-23",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 14,
       "event_type": "public_clinic",
@@ -223,17 +180,60 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 18,
+      "event_type": "woodland_stewardship",
+      "effects": {
+        "food": 4,
+        "wood": 12
+      },
+      "summary": "The Keepers coppiced the woodland and renewed its paths.",
+      "civic_effects": {
+        "trust": 5,
+        "culture": 1
+      },
+      "season": "High summer",
+      "council": "Riverfolk",
+      "notes": [
+        "Covered market completed in River Quay."
+      ],
+      "ledger": {
+        "food_produced": 13,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 4,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 101,
+        "food": 184,
+        "wood": 67,
+        "morale": 10,
+        "security": 4,
+        "health": 9,
+        "treasury": 44,
+        "trust": 68,
+        "culture": 29
+      },
+      "run_date": "2026-09-28",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
     "treasury": 44,
-    "trust": 63,
-    "culture": 28,
+    "trust": 68,
+    "culture": 29,
     "guilds": {
-      "Keepers": 56,
+      "Keepers": 59,
       "Makers": 59,
-      "Riverfolk": 52
+      "Riverfolk": 56
     },
     "council": {
       "guild": "Riverfolk",
@@ -250,15 +250,15 @@
         "progress": 0
       },
       "harbor": {
-        "level": 0,
-        "progress": 5
+        "level": 1,
+        "progress": 0
       },
       "forum": {
         "level": 0,
         "progress": 0
       }
     },
-    "active_project": "harbor",
+    "active_project": "forum",
     "completed_projects": [
       {
         "day": 6,
@@ -271,6 +271,12 @@
         "district": "lantern",
         "title": "Public atelier completed in Lantern Ward",
         "level": 1
+      },
+      {
+        "day": 18,
+        "district": "harbor",
+        "title": "Covered market completed in River Quay",
+        "level": 1
       }
     ],
     "api_attempts": 0,
@@ -278,5 +284,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-09-27"
+  "last_run_date": "2026-09-28"
 }
