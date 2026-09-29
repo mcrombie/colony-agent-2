@@ -56,3 +56,6 @@ The Makers displayed river glass, pottery and carved instruments, increased food
 
 Day 18 — Varenhold · High summer · Riverfolk council:
 The Keepers coppiced the woodland and renewed its paths, increased food by 4, and increased wood by 12. Covered market completed in River Quay. Civic balance: increased trust by 5, and increased culture by 1. The settlement endures into another morning.
+
+Day 19 — Varenhold · High summer · Riverfolk council:
+A good harvest lifted the colony's spirits, increased food by 11. Civic balance: increased treasury by 3. The settlement endures into another morning.
