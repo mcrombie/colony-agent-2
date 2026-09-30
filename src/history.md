@@ -59,3 +59,6 @@ The Keepers coppiced the woodland and renewed its paths, increased food by 4, an
 
 Day 19 — Varenhold · High summer · Riverfolk council:
 A good harvest lifted the colony's spirits, increased food by 11. Civic balance: increased treasury by 3. The settlement endures into another morning.
+
+Day 20 — Varenhold · High summer · Riverfolk council:
+A construction effort reinforced the settlement, reduced wood by 10, and increased security by 1. Civic balance: increased treasury by 2, reduced trust by 2, and reduced culture by 2. The settlement endures into another morning.
