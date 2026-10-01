@@ -62,3 +62,6 @@ A good harvest lifted the colony's spirits, increased food by 11. Civic balance:
 
 Day 20 — Varenhold · High summer · Riverfolk council:
 A construction effort reinforced the settlement, reduced wood by 10, and increased security by 1. Civic balance: increased treasury by 2, reduced trust by 2, and reduced culture by 2. The settlement endures into another morning.
+
+Day 21 — Varenhold · High summer · Riverfolk council:
+River barges exchanged grain, timber and news at the quay, increased wood by 4, and reduced security by 1. Civic balance: increased treasury by 13, and increased trust by 1. The settlement endures into another morning.
