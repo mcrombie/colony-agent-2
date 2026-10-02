@@ -65,3 +65,6 @@ A construction effort reinforced the settlement, reduced wood by 10, and increas
 
 Day 21 — Varenhold · High summer · Riverfolk council:
 River barges exchanged grain, timber and news at the quay, increased wood by 4, and reduced security by 1. Civic balance: increased treasury by 13, and increased trust by 1. The settlement endures into another morning.
+
+Day 22 — Varenhold · High summer · Keepers council:
+Competing guilds halted work over the allocation of public funds, reduced wood by 3, and reduced morale by 2. The council passed to the Keepers for a seven-day term. Civic balance: increased treasury by 1, reduced trust by 3, and reduced culture by 1. The settlement endures into another morning.
