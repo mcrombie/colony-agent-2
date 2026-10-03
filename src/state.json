@@ -1,60 +1,17 @@
 {
-  "day": 23,
+  "day": 24,
   "colony_name": "Varenhold",
   "population": 101,
   "food": 195,
-  "wood": 58,
+  "wood": 71,
   "morale": 8,
   "security": 4,
-  "health": 9,
+  "health": 10,
   "known_threats": [
     "wolves",
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 18,
-      "event_type": "woodland_stewardship",
-      "effects": {
-        "food": 4,
-        "wood": 12
-      },
-      "summary": "The Keepers coppiced the woodland and renewed its paths.",
-      "civic_effects": {
-        "trust": 5,
-        "culture": 1
-      },
-      "season": "High summer",
-      "council": "Riverfolk",
-      "notes": [
-        "Covered market completed in River Quay."
-      ],
-      "ledger": {
-        "food_produced": 13,
-        "food_consumed": 9,
-        "timber_gathered": 3,
-        "tax_revenue": 4,
-        "maintenance": 2,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 101,
-        "food": 184,
-        "wood": 67,
-        "morale": 10,
-        "security": 4,
-        "health": 9,
-        "treasury": 44,
-        "trust": 68,
-        "culture": 29
-      },
-      "run_date": "2026-09-28",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 19,
       "event_type": "good_harvest",
@@ -232,15 +189,59 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 23,
+      "event_type": "woodland_stewardship",
+      "effects": {
+        "wood": 13,
+        "health": 1
+      },
+      "summary": "The Keepers coppiced the woodland and renewed its paths.",
+      "civic_effects": {
+        "treasury": 1,
+        "trust": 2
+      },
+      "season": "High summer",
+      "council": "Keepers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 13,
+        "food_consumed": 9,
+        "timber_gathered": 4,
+        "tax_revenue": 4,
+        "maintenance": 2,
+        "project_timber": 3,
+        "project_coins": 2,
+        "surplus_food_exported": 4,
+        "surplus_timber_exported": 0,
+        "export_income": 1
+      },
+      "snapshot": {
+        "population": 101,
+        "food": 195,
+        "wood": 71,
+        "morale": 8,
+        "security": 4,
+        "health": 10,
+        "treasury": 64,
+        "trust": 66,
+        "culture": 26
+      },
+      "run_date": "2026-10-03",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 63,
-    "trust": 64,
+    "treasury": 64,
+    "trust": 66,
     "culture": 26,
     "guilds": {
-      "Keepers": 58,
+      "Keepers": 60,
       "Makers": 59,
       "Riverfolk": 53
     },
@@ -264,7 +265,7 @@
       },
       "forum": {
         "level": 0,
-        "progress": 4
+        "progress": 5
       }
     },
     "active_project": "forum",
@@ -293,5 +294,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-02"
+  "last_run_date": "2026-10-03"
 }
