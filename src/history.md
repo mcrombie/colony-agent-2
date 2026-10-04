@@ -71,3 +71,6 @@ Competing guilds halted work over the allocation of public funds, reduced wood b
 
 Day 23 — Varenhold · High summer · Keepers council:
 The Keepers coppiced the woodland and renewed its paths, increased wood by 13, and increased health by 1. Civic balance: increased treasury by 1, and increased trust by 2. The settlement endures into another morning.
+
+Day 24 — Varenhold · Amber autumn · Keepers council:
+The Keepers coppiced the woodland and renewed its paths, increased population by 1, and increased wood by 13. Assembly gardens completed in Commons Square. A new household joined the river commons. Civic balance: increased trust by 5, and increased culture by 1. The settlement endures into another morning.
