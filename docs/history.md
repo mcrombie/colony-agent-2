@@ -74,3 +74,6 @@ The Keepers coppiced the woodland and renewed its paths, increased wood by 13, a
 
 Day 24 — Varenhold · Amber autumn · Keepers council:
 The Keepers coppiced the woodland and renewed its paths, increased population by 1, and increased wood by 13. Assembly gardens completed in Commons Square. A new household joined the river commons. Civic balance: increased trust by 5, and increased culture by 1. The settlement endures into another morning.
+
+Day 25 — Varenhold · Amber autumn · Keepers council:
+A good harvest lifted the colony's spirits, increased wood by 1, and increased morale by 1. Civic balance: increased treasury by 4, reduced trust by 2, and reduced culture by 2. The settlement endures into another morning.
