@@ -77,3 +77,6 @@ The Keepers coppiced the woodland and renewed its paths, increased population by
 
 Day 25 — Varenhold · Amber autumn · Keepers council:
 A good harvest lifted the colony's spirits, increased wood by 1, and increased morale by 1. Civic balance: increased treasury by 4, reduced trust by 2, and reduced culture by 2. The settlement endures into another morning.
+
+Day 26 — Varenhold · Amber autumn · Keepers council:
+A poor harvest strained the colony's stores, reduced food by 8, increased wood by 1, and reduced morale by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
