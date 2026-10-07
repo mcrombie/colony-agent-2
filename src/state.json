@@ -1,64 +1,17 @@
 {
-  "day": 27,
+  "day": 28,
   "colony_name": "Varenhold",
   "population": 102,
-  "food": 187,
-  "wood": 86,
-  "morale": 8,
-  "security": 4,
-  "health": 10,
+  "food": 189,
+  "wood": 77,
+  "morale": 9,
+  "security": 5,
+  "health": 9,
   "known_threats": [
     "wolves",
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 22,
-      "event_type": "guild_rivalry",
-      "effects": {
-        "wood": -3,
-        "morale": -2
-      },
-      "summary": "Competing guilds halted work over the allocation of public funds.",
-      "civic_effects": {
-        "treasury": 1,
-        "trust": -3,
-        "culture": -1
-      },
-      "season": "High summer",
-      "council": "Keepers",
-      "notes": [
-        "The council passed to the Keepers for a seven-day term."
-      ],
-      "ledger": {
-        "food_produced": 13,
-        "food_consumed": 9,
-        "timber_gathered": 4,
-        "tax_revenue": 4,
-        "maintenance": 2,
-        "project_timber": 3,
-        "project_coins": 2,
-        "surplus_food_exported": 4,
-        "surplus_timber_exported": 0,
-        "export_income": 1
-      },
-      "snapshot": {
-        "population": 101,
-        "food": 195,
-        "wood": 58,
-        "morale": 8,
-        "security": 4,
-        "health": 9,
-        "treasury": 63,
-        "trust": 64,
-        "culture": 26
-      },
-      "run_date": "2026-10-02",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 23,
       "event_type": "woodland_stewardship",
@@ -235,16 +188,59 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 27,
+      "event_type": "construction",
+      "effects": {
+        "food": 2,
+        "wood": -9,
+        "morale": 1,
+        "security": 1,
+        "health": -1
+      },
+      "summary": "Colonists spent wood to strengthen the settlement.",
+      "civic_effects": {
+        "treasury": -1
+      },
+      "season": "Amber autumn",
+      "council": "Keepers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 11,
+        "food_consumed": 9,
+        "timber_gathered": 4,
+        "tax_revenue": 4,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 102,
+        "food": 189,
+        "wood": 77,
+        "morale": 9,
+        "security": 5,
+        "health": 9,
+        "treasury": 66,
+        "trust": 69,
+        "culture": 25
+      },
+      "run_date": "2026-10-07",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 67,
+    "treasury": 66,
     "trust": 69,
     "culture": 25,
     "guilds": {
-      "Keepers": 68,
-      "Makers": 59,
+      "Keepers": 67,
+      "Makers": 62,
       "Riverfolk": 53
     },
     "council": {
@@ -255,7 +251,7 @@
     "districts": {
       "grove": {
         "level": 1,
-        "progress": 2
+        "progress": 3
       },
       "lantern": {
         "level": 1,
@@ -302,5 +298,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-06"
+  "last_run_date": "2026-10-07"
 }
