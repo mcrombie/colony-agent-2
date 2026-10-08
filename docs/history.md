@@ -83,3 +83,6 @@ A poor harvest strained the colony's stores, reduced food by 8, increased wood b
 
 Day 27 — Varenhold · Amber autumn · Keepers council:
 A construction effort reinforced the settlement, increased food by 2, reduced wood by 9, increased morale by 1, increased security by 1, and reduced health by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
+
+Day 28 — Varenhold · Amber autumn · Keepers council:
+The colony passed a quiet day, reduced food by 3, increased wood by 1, and reduced security by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
