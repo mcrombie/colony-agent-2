@@ -86,3 +86,6 @@ A construction effort reinforced the settlement, increased food by 2, reduced wo
 
 Day 28 — Varenhold · Amber autumn · Keepers council:
 The colony passed a quiet day, reduced food by 3, increased wood by 1, and reduced security by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
+
+Day 29 — Varenhold · Amber autumn · Riverfolk council:
+River barges exchanged grain, timber and news at the quay, increased food by 9, and increased wood by 4. The council passed to the Riverfolk for a seven-day term. Civic balance: increased treasury by 8, and increased trust by 5. The settlement endures into another morning.

@@ -1,9 +1,9 @@
 {
-  "day": 29,
+  "day": 30,
   "colony_name": "Varenhold",
   "population": 102,
-  "food": 186,
-  "wood": 78,
+  "food": 195,
+  "wood": 82,
   "morale": 9,
   "security": 4,
   "health": 9,
@@ -12,53 +12,6 @@
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 24,
-      "event_type": "woodland_stewardship",
-      "effects": {
-        "population": 1,
-        "wood": 13
-      },
-      "summary": "The Keepers coppiced the woodland and renewed its paths.",
-      "civic_effects": {
-        "trust": 5,
-        "culture": 1
-      },
-      "season": "Amber autumn",
-      "council": "Keepers",
-      "notes": [
-        "Assembly gardens completed in Commons Square.",
-        "A new household joined the river commons."
-      ],
-      "ledger": {
-        "food_produced": 11,
-        "food_consumed": 9,
-        "timber_gathered": 4,
-        "tax_revenue": 4,
-        "maintenance": 2,
-        "project_timber": 3,
-        "project_coins": 2,
-        "surplus_food_exported": 2,
-        "surplus_timber_exported": 0,
-        "export_income": 0
-      },
-      "snapshot": {
-        "population": 102,
-        "food": 195,
-        "wood": 84,
-        "morale": 8,
-        "security": 4,
-        "health": 10,
-        "treasury": 64,
-        "trust": 71,
-        "culture": 27
-      },
-      "run_date": "2026-10-04",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 25,
       "event_type": "good_harvest",
@@ -228,27 +181,73 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 29,
+      "event_type": "river_market",
+      "effects": {
+        "food": 9,
+        "wood": 4
+      },
+      "summary": "River barges exchanged grain, timber and news at the quay.",
+      "civic_effects": {
+        "treasury": 8,
+        "trust": 5
+      },
+      "season": "Amber autumn",
+      "council": "Riverfolk",
+      "notes": [
+        "The council passed to the Riverfolk for a seven-day term."
+      ],
+      "ledger": {
+        "food_produced": 11,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 5,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2,
+        "surplus_food_exported": 1,
+        "surplus_timber_exported": 0,
+        "export_income": 0
+      },
+      "snapshot": {
+        "population": 102,
+        "food": 195,
+        "wood": 82,
+        "morale": 9,
+        "security": 4,
+        "health": 9,
+        "treasury": 73,
+        "trust": 74,
+        "culture": 25
+      },
+      "run_date": "2026-10-09",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 65,
-    "trust": 69,
+    "treasury": 73,
+    "trust": 74,
     "culture": 25,
     "guilds": {
       "Keepers": 66,
       "Makers": 62,
-      "Riverfolk": 53
+      "Riverfolk": 55
     },
     "council": {
-      "guild": "Keepers",
-      "term_start": 22,
-      "term": 4
+      "guild": "Riverfolk",
+      "term_start": 29,
+      "term": 5
     },
     "districts": {
       "grove": {
         "level": 1,
-        "progress": 4
+        "progress": 5
       },
       "lantern": {
         "level": 1,
@@ -295,5 +294,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-08"
+  "last_run_date": "2026-10-09"
 }
