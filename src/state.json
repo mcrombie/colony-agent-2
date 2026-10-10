@@ -1,10 +1,10 @@
 {
-  "day": 30,
+  "day": 31,
   "colony_name": "Varenhold",
   "population": 102,
   "food": 195,
   "wood": 82,
-  "morale": 9,
+  "morale": 10,
   "security": 4,
   "health": 9,
   "known_threats": [
@@ -12,51 +12,6 @@
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 25,
-      "event_type": "good_harvest",
-      "effects": {
-        "wood": 1,
-        "morale": 1
-      },
-      "summary": "A strong harvest added food to the stores.",
-      "civic_effects": {
-        "treasury": 4,
-        "trust": -2,
-        "culture": -2
-      },
-      "season": "Amber autumn",
-      "council": "Keepers",
-      "notes": [],
-      "ledger": {
-        "food_produced": 11,
-        "food_consumed": 9,
-        "timber_gathered": 4,
-        "tax_revenue": 4,
-        "maintenance": 3,
-        "project_timber": 3,
-        "project_coins": 2,
-        "surplus_food_exported": 17,
-        "surplus_timber_exported": 0,
-        "export_income": 5
-      },
-      "snapshot": {
-        "population": 102,
-        "food": 195,
-        "wood": 85,
-        "morale": 9,
-        "security": 4,
-        "health": 10,
-        "treasury": 68,
-        "trust": 69,
-        "culture": 25
-      },
-      "run_date": "2026-10-05",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 26,
       "event_type": "poor_harvest",
@@ -227,17 +182,63 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 30,
+      "event_type": "good_harvest",
+      "effects": {
+        "morale": 1
+      },
+      "summary": "A strong harvest added food to the stores.",
+      "civic_effects": {
+        "treasury": 5,
+        "trust": 1,
+        "culture": -1
+      },
+      "season": "Amber autumn",
+      "council": "Riverfolk",
+      "notes": [
+        "Orchard terraces completed in Grove Ward."
+      ],
+      "ledger": {
+        "food_produced": 11,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 5,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2,
+        "surplus_food_exported": 17,
+        "surplus_timber_exported": 0,
+        "export_income": 5
+      },
+      "snapshot": {
+        "population": 102,
+        "food": 195,
+        "wood": 82,
+        "morale": 10,
+        "security": 4,
+        "health": 9,
+        "treasury": 78,
+        "trust": 75,
+        "culture": 24
+      },
+      "run_date": "2026-10-10",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 73,
-    "trust": 74,
-    "culture": 25,
+    "treasury": 78,
+    "trust": 75,
+    "culture": 24,
     "guilds": {
-      "Keepers": 66,
+      "Keepers": 74,
       "Makers": 62,
-      "Riverfolk": 55
+      "Riverfolk": 54
     },
     "council": {
       "guild": "Riverfolk",
@@ -246,8 +247,8 @@
     },
     "districts": {
       "grove": {
-        "level": 1,
-        "progress": 5
+        "level": 2,
+        "progress": 0
       },
       "lantern": {
         "level": 1,
@@ -262,7 +263,7 @@
         "progress": 0
       }
     },
-    "active_project": "grove",
+    "active_project": "lantern",
     "completed_projects": [
       {
         "day": 6,
@@ -287,6 +288,12 @@
         "district": "forum",
         "title": "Assembly gardens completed in Commons Square",
         "level": 1
+      },
+      {
+        "day": 30,
+        "district": "grove",
+        "title": "Orchard terraces completed in Grove Ward",
+        "level": 2
       }
     ],
     "api_attempts": 0,
@@ -294,5 +301,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-09"
+  "last_run_date": "2026-10-10"
 }
