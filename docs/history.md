@@ -92,3 +92,6 @@ River barges exchanged grain, timber and news at the quay, increased food by 9, 
 
 Day 30 — Varenhold · Amber autumn · Riverfolk council:
 A good harvest lifted the colony's spirits, increased morale by 1. Orchard terraces completed in Grove Ward. Civic balance: increased treasury by 5, increased trust by 1, and reduced culture by 1. The settlement endures into another morning.
+
+Day 31 — Varenhold · Amber autumn · Riverfolk council:
+A good harvest lifted the colony's spirits. Civic balance: increased treasury by 6. The settlement endures into another morning.
