@@ -95,3 +95,6 @@ A good harvest lifted the colony's spirits, increased morale by 1. Orchard terra
 
 Day 31 — Varenhold · Amber autumn · Riverfolk council:
 A good harvest lifted the colony's spirits. Civic balance: increased treasury by 6. The settlement endures into another morning.
+
+Day 32 — Varenhold · Amber autumn · Riverfolk council:
+The Lantern Ward opened its courtyards for a night of music, reduced food by 3. Civic balance: reduced treasury by 5, increased trust by 3, and increased culture by 7. The settlement endures into another morning.
