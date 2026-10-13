@@ -1,58 +1,17 @@
 {
-  "day": 33,
+  "day": 34,
   "colony_name": "Varenhold",
   "population": 102,
-  "food": 192,
+  "food": 195,
   "wood": 82,
-  "morale": 10,
-  "security": 4,
+  "morale": 7,
+  "security": 3,
   "health": 9,
   "known_threats": [
     "wolves",
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 28,
-      "event_type": "quiet_day",
-      "effects": {
-        "food": -3,
-        "wood": 1,
-        "security": -1
-      },
-      "summary": "The day passed quietly while food stores were used.",
-      "civic_effects": {
-        "treasury": -1
-      },
-      "season": "Amber autumn",
-      "council": "Keepers",
-      "notes": [],
-      "ledger": {
-        "food_produced": 11,
-        "food_consumed": 9,
-        "timber_gathered": 4,
-        "tax_revenue": 4,
-        "maintenance": 3,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 102,
-        "food": 186,
-        "wood": 78,
-        "morale": 9,
-        "security": 4,
-        "health": 9,
-        "treasury": 65,
-        "trust": 69,
-        "culture": 25
-      },
-      "run_date": "2026-10-08",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 29,
       "event_type": "river_market",
@@ -225,17 +184,58 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 33,
+      "event_type": "dispute",
+      "effects": {
+        "food": 3,
+        "morale": -3,
+        "security": -1
+      },
+      "summary": "A dispute unsettled the colony.",
+      "civic_effects": {
+        "trust": -3
+      },
+      "season": "Amber autumn",
+      "council": "Riverfolk",
+      "notes": [],
+      "ledger": {
+        "food_produced": 12,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 5,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 102,
+        "food": 195,
+        "wood": 82,
+        "morale": 7,
+        "security": 3,
+        "health": 9,
+        "treasury": 79,
+        "trust": 75,
+        "culture": 31
+      },
+      "run_date": "2026-10-13",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
     "treasury": 79,
-    "trust": 78,
+    "trust": 75,
     "culture": 31,
     "guilds": {
       "Keepers": 77,
       "Makers": 65,
-      "Riverfolk": 52
+      "Riverfolk": 51
     },
     "council": {
       "guild": "Riverfolk",
@@ -249,7 +249,7 @@
       },
       "lantern": {
         "level": 1,
-        "progress": 2
+        "progress": 3
       },
       "harbor": {
         "level": 1,
@@ -298,5 +298,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-12"
+  "last_run_date": "2026-10-13"
 }

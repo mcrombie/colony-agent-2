@@ -98,3 +98,6 @@ A good harvest lifted the colony's spirits. Civic balance: increased treasury by
 
 Day 32 — Varenhold · Amber autumn · Riverfolk council:
 The Lantern Ward opened its courtyards for a night of music, reduced food by 3. Civic balance: reduced treasury by 5, increased trust by 3, and increased culture by 7. The settlement endures into another morning.
+
+Day 33 — Varenhold · Amber autumn · Riverfolk council:
+A dispute unsettled the day's work, increased food by 3, reduced morale by 3, and reduced security by 1. Civic balance: reduced trust by 3. The settlement endures into another morning.
