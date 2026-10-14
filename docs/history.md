@@ -101,3 +101,6 @@ The Lantern Ward opened its courtyards for a night of music, reduced food by 3. 
 
 Day 33 — Varenhold · Amber autumn · Riverfolk council:
 A dispute unsettled the day's work, increased food by 3, reduced morale by 3, and reduced security by 1. Civic balance: reduced trust by 3. The settlement endures into another morning.
+
+Day 34 — Varenhold · Amber autumn · Riverfolk council:
+Citizens argued their priorities in an open council forum, increased morale by 1, and increased security by 1. Civic balance: increased treasury by 1, and increased trust by 5. The settlement endures into another morning.

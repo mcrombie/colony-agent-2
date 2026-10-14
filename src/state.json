@@ -1,63 +1,17 @@
 {
-  "day": 34,
+  "day": 35,
   "colony_name": "Varenhold",
   "population": 102,
   "food": 195,
   "wood": 82,
-  "morale": 7,
-  "security": 3,
+  "morale": 8,
+  "security": 4,
   "health": 9,
   "known_threats": [
     "wolves",
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 29,
-      "event_type": "river_market",
-      "effects": {
-        "food": 9,
-        "wood": 4
-      },
-      "summary": "River barges exchanged grain, timber and news at the quay.",
-      "civic_effects": {
-        "treasury": 8,
-        "trust": 5
-      },
-      "season": "Amber autumn",
-      "council": "Riverfolk",
-      "notes": [
-        "The council passed to the Riverfolk for a seven-day term."
-      ],
-      "ledger": {
-        "food_produced": 11,
-        "food_consumed": 9,
-        "timber_gathered": 3,
-        "tax_revenue": 5,
-        "maintenance": 3,
-        "project_timber": 3,
-        "project_coins": 2,
-        "surplus_food_exported": 1,
-        "surplus_timber_exported": 0,
-        "export_income": 0
-      },
-      "snapshot": {
-        "population": 102,
-        "food": 195,
-        "wood": 82,
-        "morale": 9,
-        "security": 4,
-        "health": 9,
-        "treasury": 73,
-        "trust": 74,
-        "culture": 25
-      },
-      "run_date": "2026-10-09",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 30,
       "event_type": "good_harvest",
@@ -225,17 +179,61 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 34,
+      "event_type": "council_forum",
+      "effects": {
+        "morale": 1,
+        "security": 1
+      },
+      "summary": "Citizens argued their priorities in an open council forum.",
+      "civic_effects": {
+        "treasury": 1,
+        "trust": 5
+      },
+      "season": "Amber autumn",
+      "council": "Riverfolk",
+      "notes": [],
+      "ledger": {
+        "food_produced": 12,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 5,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2,
+        "surplus_food_exported": 3,
+        "surplus_timber_exported": 0,
+        "export_income": 1
+      },
+      "snapshot": {
+        "population": 102,
+        "food": 195,
+        "wood": 82,
+        "morale": 8,
+        "security": 4,
+        "health": 9,
+        "treasury": 80,
+        "trust": 80,
+        "culture": 31
+      },
+      "run_date": "2026-10-14",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 79,
-    "trust": 75,
+    "treasury": 80,
+    "trust": 80,
     "culture": 31,
     "guilds": {
-      "Keepers": 77,
-      "Makers": 65,
-      "Riverfolk": 51
+      "Keepers": 79,
+      "Makers": 67,
+      "Riverfolk": 52
     },
     "council": {
       "guild": "Riverfolk",
@@ -249,7 +247,7 @@
       },
       "lantern": {
         "level": 1,
-        "progress": 3
+        "progress": 4
       },
       "harbor": {
         "level": 1,
@@ -298,5 +296,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-13"
+  "last_run_date": "2026-10-14"
 }
