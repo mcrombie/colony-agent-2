@@ -104,3 +104,6 @@ A dispute unsettled the day's work, increased food by 3, reduced morale by 3, an
 
 Day 34 — Varenhold · Amber autumn · Riverfolk council:
 Citizens argued their priorities in an open council forum, increased morale by 1, and increased security by 1. Civic balance: increased treasury by 1, and increased trust by 5. The settlement endures into another morning.
+
+Day 35 — Varenhold · Amber autumn · Riverfolk council:
+River barges exchanged grain, timber and news at the quay, increased wood by 4, and reduced security by 1. Civic balance: increased treasury by 11, reduced trust by 1, and reduced culture by 2. The settlement endures into another morning.
