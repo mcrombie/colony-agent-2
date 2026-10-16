@@ -1,57 +1,17 @@
 {
-  "day": 36,
+  "day": 37,
   "colony_name": "Varenhold",
-  "population": 102,
-  "food": 195,
-  "wood": 86,
-  "morale": 8,
-  "security": 3,
-  "health": 9,
+  "population": 103,
+  "food": 193,
+  "wood": 76,
+  "morale": 9,
+  "security": 4,
+  "health": 8,
   "known_threats": [
     "wolves",
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 31,
-      "event_type": "good_harvest",
-      "effects": {},
-      "summary": "A strong harvest added food to the stores.",
-      "civic_effects": {
-        "treasury": 6
-      },
-      "season": "Amber autumn",
-      "council": "Riverfolk",
-      "notes": [],
-      "ledger": {
-        "food_produced": 12,
-        "food_consumed": 9,
-        "timber_gathered": 3,
-        "tax_revenue": 5,
-        "maintenance": 3,
-        "project_timber": 3,
-        "project_coins": 2,
-        "surplus_food_exported": 18,
-        "surplus_timber_exported": 0,
-        "export_income": 6
-      },
-      "snapshot": {
-        "population": 102,
-        "food": 195,
-        "wood": 82,
-        "morale": 10,
-        "security": 4,
-        "health": 9,
-        "treasury": 84,
-        "trust": 75,
-        "culture": 24
-      },
-      "run_date": "2026-10-11",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 32,
       "event_type": "lantern_festival",
@@ -222,22 +182,72 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 36,
+      "event_type": "construction",
+      "effects": {
+        "population": 1,
+        "food": -2,
+        "wood": -10,
+        "morale": 1,
+        "security": 1,
+        "health": -1
+      },
+      "summary": "Colonists spent wood to strengthen the settlement.",
+      "civic_effects": {
+        "treasury": -1,
+        "trust": 7,
+        "culture": 3
+      },
+      "season": "Deep winter",
+      "council": "Makers",
+      "notes": [
+        "The council passed to the Makers for a seven-day term.",
+        "Public atelier completed in Lantern Ward.",
+        "A new household joined the river commons."
+      ],
+      "ledger": {
+        "food_produced": 7,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 4,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 103,
+        "food": 193,
+        "wood": 76,
+        "morale": 9,
+        "security": 4,
+        "health": 8,
+        "treasury": 90,
+        "trust": 86,
+        "culture": 32
+      },
+      "run_date": "2026-10-16",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 91,
-    "trust": 79,
-    "culture": 29,
+    "treasury": 90,
+    "trust": 86,
+    "culture": 32,
     "guilds": {
       "Keepers": 79,
-      "Makers": 67,
+      "Makers": 74,
       "Riverfolk": 54
     },
     "council": {
-      "guild": "Riverfolk",
-      "term_start": 29,
-      "term": 5
+      "guild": "Makers",
+      "term_start": 36,
+      "term": 6
     },
     "districts": {
       "grove": {
@@ -245,8 +255,8 @@
         "progress": 0
       },
       "lantern": {
-        "level": 1,
-        "progress": 5
+        "level": 2,
+        "progress": 0
       },
       "harbor": {
         "level": 1,
@@ -257,7 +267,7 @@
         "progress": 0
       }
     },
-    "active_project": "lantern",
+    "active_project": "harbor",
     "completed_projects": [
       {
         "day": 6,
@@ -288,6 +298,12 @@
         "district": "grove",
         "title": "Orchard terraces completed in Grove Ward",
         "level": 2
+      },
+      {
+        "day": 36,
+        "district": "lantern",
+        "title": "Public atelier completed in Lantern Ward",
+        "level": 2
       }
     ],
     "api_attempts": 0,
@@ -295,5 +311,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-15"
+  "last_run_date": "2026-10-16"
 }
