@@ -1,10 +1,10 @@
 {
-  "day": 37,
+  "day": 38,
   "colony_name": "Varenhold",
   "population": 103,
-  "food": 193,
-  "wood": 76,
-  "morale": 9,
+  "food": 191,
+  "wood": 70,
+  "morale": 10,
   "security": 4,
   "health": 8,
   "known_threats": [
@@ -12,47 +12,6 @@
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 32,
-      "event_type": "lantern_festival",
-      "effects": {
-        "food": -3
-      },
-      "summary": "The Lantern Ward opened its courtyards for a night of music.",
-      "civic_effects": {
-        "treasury": -5,
-        "trust": 3,
-        "culture": 7
-      },
-      "season": "Amber autumn",
-      "council": "Riverfolk",
-      "notes": [],
-      "ledger": {
-        "food_produced": 12,
-        "food_consumed": 9,
-        "timber_gathered": 3,
-        "tax_revenue": 5,
-        "maintenance": 3,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 102,
-        "food": 192,
-        "wood": 82,
-        "morale": 10,
-        "security": 4,
-        "health": 9,
-        "treasury": 79,
-        "trust": 78,
-        "culture": 31
-      },
-      "run_date": "2026-10-12",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 33,
       "event_type": "dispute",
@@ -232,16 +191,58 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 37,
+      "event_type": "craft_fair",
+      "effects": {
+        "food": -2,
+        "wood": -6,
+        "morale": 1
+      },
+      "summary": "The Makers displayed river glass, pottery and carved instruments.",
+      "civic_effects": {
+        "treasury": 5,
+        "culture": 5
+      },
+      "season": "Deep winter",
+      "council": "Makers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 7,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 4,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 103,
+        "food": 191,
+        "wood": 70,
+        "morale": 10,
+        "security": 4,
+        "health": 8,
+        "treasury": 95,
+        "trust": 86,
+        "culture": 37
+      },
+      "run_date": "2026-10-17",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 90,
+    "treasury": 95,
     "trust": 86,
-    "culture": 32,
+    "culture": 37,
     "guilds": {
       "Keepers": 79,
-      "Makers": 74,
+      "Makers": 76,
       "Riverfolk": 54
     },
     "council": {
@@ -260,7 +261,7 @@
       },
       "harbor": {
         "level": 1,
-        "progress": 0
+        "progress": 1
       },
       "forum": {
         "level": 1,
@@ -311,5 +312,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-16"
+  "last_run_date": "2026-10-17"
 }

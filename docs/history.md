@@ -110,3 +110,6 @@ River barges exchanged grain, timber and news at the quay, increased wood by 4, 
 
 Day 36 — Varenhold · Deep winter · Makers council:
 A construction effort reinforced the settlement, increased population by 1, reduced food by 2, reduced wood by 10, increased morale by 1, increased security by 1, and reduced health by 1. The council passed to the Makers for a seven-day term. Public atelier completed in Lantern Ward. A new household joined the river commons. Civic balance: reduced treasury by 1, increased trust by 7, and increased culture by 3. The settlement endures into another morning.
+
+Day 37 — Varenhold · Deep winter · Makers council:
+The Makers displayed river glass, pottery and carved instruments, reduced food by 2, reduced wood by 6, and increased morale by 1. Civic balance: increased treasury by 5, and increased culture by 5. The settlement endures into another morning.
