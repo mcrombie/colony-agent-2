@@ -113,3 +113,6 @@ A construction effort reinforced the settlement, increased population by 1, redu
 
 Day 37 — Varenhold · Deep winter · Makers council:
 The Makers displayed river glass, pottery and carved instruments, reduced food by 2, reduced wood by 6, and increased morale by 1. Civic balance: increased treasury by 5, and increased culture by 5. The settlement endures into another morning.
+
+Day 38 — Varenhold · Deep winter · Makers council:
+Illness moved through the colony, reduced food by 2, reduced morale by 1, and reduced health by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.

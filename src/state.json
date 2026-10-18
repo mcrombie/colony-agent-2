@@ -1,58 +1,17 @@
 {
-  "day": 38,
+  "day": 39,
   "colony_name": "Varenhold",
   "population": 103,
-  "food": 191,
+  "food": 189,
   "wood": 70,
-  "morale": 10,
+  "morale": 9,
   "security": 4,
-  "health": 8,
+  "health": 7,
   "known_threats": [
     "wolves",
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 33,
-      "event_type": "dispute",
-      "effects": {
-        "food": 3,
-        "morale": -3,
-        "security": -1
-      },
-      "summary": "A dispute unsettled the colony.",
-      "civic_effects": {
-        "trust": -3
-      },
-      "season": "Amber autumn",
-      "council": "Riverfolk",
-      "notes": [],
-      "ledger": {
-        "food_produced": 12,
-        "food_consumed": 9,
-        "timber_gathered": 3,
-        "tax_revenue": 5,
-        "maintenance": 3,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 102,
-        "food": 195,
-        "wood": 82,
-        "morale": 7,
-        "security": 3,
-        "health": 9,
-        "treasury": 79,
-        "trust": 75,
-        "culture": 31
-      },
-      "run_date": "2026-10-13",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 34,
       "event_type": "council_forum",
@@ -233,16 +192,57 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 38,
+      "event_type": "illness",
+      "effects": {
+        "food": -2,
+        "morale": -1,
+        "health": -1
+      },
+      "summary": "Illness spread through several homes.",
+      "civic_effects": {
+        "treasury": -1
+      },
+      "season": "Deep winter",
+      "council": "Makers",
+      "notes": [],
+      "ledger": {
+        "food_produced": 7,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 4,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 103,
+        "food": 189,
+        "wood": 70,
+        "morale": 9,
+        "security": 4,
+        "health": 7,
+        "treasury": 94,
+        "trust": 86,
+        "culture": 37
+      },
+      "run_date": "2026-10-18",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 95,
+    "treasury": 94,
     "trust": 86,
     "culture": 37,
     "guilds": {
       "Keepers": 79,
-      "Makers": 76,
+      "Makers": 75,
       "Riverfolk": 54
     },
     "council": {
@@ -261,7 +261,7 @@
       },
       "harbor": {
         "level": 1,
-        "progress": 1
+        "progress": 2
       },
       "forum": {
         "level": 1,
@@ -312,5 +312,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-17"
+  "last_run_date": "2026-10-18"
 }
