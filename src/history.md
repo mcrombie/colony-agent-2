@@ -116,3 +116,6 @@ The Makers displayed river glass, pottery and carved instruments, reduced food b
 
 Day 38 — Varenhold · Deep winter · Makers council:
 Illness moved through the colony, reduced food by 2, reduced morale by 1, and reduced health by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
+
+Day 39 — Varenhold · Deep winter · Makers council:
+Grove healers held a free clinic for every district, reduced food by 6, and increased health by 2. Civic balance: reduced treasury by 5, and increased trust by 4. The settlement endures into another morning.
