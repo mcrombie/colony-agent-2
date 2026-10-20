@@ -119,3 +119,6 @@ Illness moved through the colony, reduced food by 2, reduced morale by 1, and re
 
 Day 39 — Varenhold · Deep winter · Makers council:
 Grove healers held a free clinic for every district, reduced food by 6, and increased health by 2. Civic balance: reduced treasury by 5, and increased trust by 4. The settlement endures into another morning.
+
+Day 40 — Varenhold · Deep winter · Makers council:
+Grove healers held a free clinic for every district, reduced food by 6, and increased health by 1. Civic balance: reduced treasury by 5, increased trust by 2, and reduced culture by 2. The settlement endures into another morning.
