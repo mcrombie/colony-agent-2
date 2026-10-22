@@ -125,3 +125,6 @@ Grove healers held a free clinic for every district, reduced food by 6, and incr
 
 Day 41 — Varenhold · Deep winter · Makers council:
 A poor harvest strained the colony's stores, reduced food by 12, and reduced morale by 1. Civic balance: reduced treasury by 1. The settlement endures into another morning.
+
+Day 42 — Varenhold · Deep winter · Makers council:
+The Keepers coppiced the woodland and renewed its paths, reduced food by 2, increased wood by 12, and reduced security by 1. Covered market completed in River Quay. Civic balance: reduced treasury by 1, increased trust by 5, and increased culture by 1. The settlement endures into another morning.

@@ -1,59 +1,17 @@
 {
-  "day": 42,
+  "day": 43,
   "colony_name": "Varenhold",
   "population": 103,
-  "food": 165,
-  "wood": 70,
+  "food": 163,
+  "wood": 82,
   "morale": 8,
-  "security": 4,
+  "security": 3,
   "health": 10,
   "known_threats": [
     "wolves",
     "winter"
   ],
   "recent_events": [
-    {
-      "day": 37,
-      "event_type": "craft_fair",
-      "effects": {
-        "food": -2,
-        "wood": -6,
-        "morale": 1
-      },
-      "summary": "The Makers displayed river glass, pottery and carved instruments.",
-      "civic_effects": {
-        "treasury": 5,
-        "culture": 5
-      },
-      "season": "Deep winter",
-      "council": "Makers",
-      "notes": [],
-      "ledger": {
-        "food_produced": 7,
-        "food_consumed": 9,
-        "timber_gathered": 3,
-        "tax_revenue": 4,
-        "maintenance": 3,
-        "project_timber": 3,
-        "project_coins": 2
-      },
-      "snapshot": {
-        "population": 103,
-        "food": 191,
-        "wood": 70,
-        "morale": 10,
-        "security": 4,
-        "health": 8,
-        "treasury": 95,
-        "trust": 86,
-        "culture": 37
-      },
-      "run_date": "2026-10-17",
-      "director": {
-        "source": "local",
-        "api_attempts": 0
-      }
-    },
     {
       "day": 38,
       "event_type": "illness",
@@ -217,17 +175,62 @@
         "source": "local",
         "api_attempts": 0
       }
+    },
+    {
+      "day": 42,
+      "event_type": "woodland_stewardship",
+      "effects": {
+        "food": -2,
+        "wood": 12,
+        "security": -1
+      },
+      "summary": "The Keepers coppiced the woodland and renewed its paths.",
+      "civic_effects": {
+        "treasury": -1,
+        "trust": 5,
+        "culture": 1
+      },
+      "season": "Deep winter",
+      "council": "Makers",
+      "notes": [
+        "Covered market completed in River Quay."
+      ],
+      "ledger": {
+        "food_produced": 7,
+        "food_consumed": 9,
+        "timber_gathered": 3,
+        "tax_revenue": 4,
+        "maintenance": 3,
+        "project_timber": 3,
+        "project_coins": 2
+      },
+      "snapshot": {
+        "population": 103,
+        "food": 163,
+        "wood": 82,
+        "morale": 8,
+        "security": 3,
+        "health": 10,
+        "treasury": 82,
+        "trust": 97,
+        "culture": 36
+      },
+      "run_date": "2026-10-22",
+      "director": {
+        "source": "local",
+        "api_attempts": 0
+      }
     }
   ],
   "commons": {
     "charter_day": 1,
-    "treasury": 83,
-    "trust": 92,
-    "culture": 35,
+    "treasury": 82,
+    "trust": 97,
+    "culture": 36,
     "guilds": {
-      "Keepers": 85,
-      "Makers": 72,
-      "Riverfolk": 54
+      "Keepers": 88,
+      "Makers": 71,
+      "Riverfolk": 59
     },
     "council": {
       "guild": "Makers",
@@ -244,15 +247,15 @@
         "progress": 0
       },
       "harbor": {
-        "level": 1,
-        "progress": 5
+        "level": 2,
+        "progress": 0
       },
       "forum": {
         "level": 1,
         "progress": 0
       }
     },
-    "active_project": "harbor",
+    "active_project": "forum",
     "completed_projects": [
       {
         "day": 6,
@@ -289,6 +292,12 @@
         "district": "lantern",
         "title": "Public atelier completed in Lantern Ward",
         "level": 2
+      },
+      {
+        "day": 42,
+        "district": "harbor",
+        "title": "Covered market completed in River Quay",
+        "level": 2
       }
     ],
     "api_attempts": 0,
@@ -296,5 +305,5 @@
     "output_tokens": 0
   },
   "schema_version": 2,
-  "last_run_date": "2026-10-21"
+  "last_run_date": "2026-10-22"
 }
