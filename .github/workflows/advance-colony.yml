@@ -1,17 +1,12 @@
 name: Advance Colony
 
 on:
-  schedule:
-    - cron: "37 12 * * *"
   workflow_dispatch:
     inputs:
       email_only:
         description: Send the latest saved report without advancing the colony
         type: boolean
         default: false
-  push:
-    branches: [main]
-    paths: ['.github/workflows/advance-colony.yml']
 
 permissions:
   contents: write
